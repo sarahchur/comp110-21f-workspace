@@ -2,27 +2,19 @@
 
 __author__ = "730228276"
 
-
-# Begin your solution here...
 beat = input("What beat do you want to repeat? ")
 times = int(input("How many times do you want to repeat it? "))
 
-
 i: int = 0
 
-while i < times - 1:
-    repeat_str: int = times
-    print(str(beat) + str(times))
-    i = i + 1
+repeat_str: str = ""
 
-while i >= times - 1: 
-    print(" No beat... ")
-    i = i + 1
-
-
-
-
-
-
-
-
+if times <= 0: 
+    print("No beat... ")
+else:
+    while i < times:
+        repeat_str = repeat_str + beat
+        if i < times - 1:
+            repeat_str = repeat_str + " "
+        i = i + 1
+    print(repeat_str)
