@@ -7,7 +7,7 @@ from random import randint
 
 # Begin your solution here...
 
-input("Your fortune cookie says...")
+print("Your fortune cookie says...")
 
 random: int = int(randint(1, 4))
 
