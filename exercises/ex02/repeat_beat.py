@@ -10,7 +10,7 @@ i: int = 0
 repeat_str: str = ""
 
 if times <= 0: 
-    print("No beat... ")
+    print("No beat...")
 else:
     while i < times:
         repeat_str = repeat_str + beat
