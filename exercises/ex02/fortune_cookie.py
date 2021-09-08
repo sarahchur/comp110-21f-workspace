@@ -25,8 +25,7 @@ else:
         if random == 3: 
             print(Fortune_3)
         else: 
-            if random == 4:
-                print(Fortune_4)
+            print(Fortune_4)
 
 
-print("Now, go spread positive vibes! ")
+print("Now, go spread positive vibes!")
