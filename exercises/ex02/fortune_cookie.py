@@ -1,3 +1,4 @@
+
 """Program that outputs one of at least four random, good fortunes."""
 
 __author__ = "730228276"
