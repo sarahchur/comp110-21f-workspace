@@ -9,15 +9,15 @@ i: int = 0
 j: int = 0
 
 while i < len(word):
-    character: str = word[i]
-    j = j + 1
+    character = word[i]
+    j = i + 1
     while j < len(word):
         if character == word[j]:
-            j = j + 1
+            j += 1
             dup = True
         else:
-            j = j + 1
-    i = i + 1
+            j += 1
+    i += 1
         
 print(dup)
    
