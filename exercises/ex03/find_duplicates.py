@@ -18,6 +18,7 @@ while i < len(word):
         else:
             j += 1
     i += 1
-        
-print(dup)
+
+dup_str: str = str(dup)
+print("Found duplicate: " + dup_str)
    
