@@ -11,4 +11,3 @@ i: int = 0
 while i < depth:
     print(TREE)
     i = i + 1
-

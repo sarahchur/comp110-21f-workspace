@@ -11,12 +11,10 @@ while i < len(word):
     j: int = i + 1
     while j < len(word):
         if character == word[j]:
-            print(dup)
-        else: 
-            print("True")
+            dup = True
 
-
-i = i + 1
-j = j + 1
-    
+        j = j + 1
+    i = i + 1
+        
+print(dup)
    
