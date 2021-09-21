@@ -1,5 +1,19 @@
 """My first program for COMP110."""
 
-__author__ = "730228276"
+def logical(n: int) -> str:
+    if n <= 0:
+        return "a"
 
-print("Hello, world.")
+    if n == 0:
+        return "b"
+    else: 
+        if n < 10:
+            return "c"
+        else:
+            if n > 10:
+                return "d"
+            else:
+                return "e"
+
+choice: int = int(input("Enter a number: "))
+print(logical(choice))
