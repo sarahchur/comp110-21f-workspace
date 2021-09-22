@@ -1,4 +1,4 @@
-"""Project One: Guess a Number 1-3"""
+"""Project One: Guess a Number 1-3!!!"""
 
 __author__ = "730228276"
 
@@ -53,7 +53,7 @@ def correct() -> None:
 
 
 def guess() -> None:
-    """Keep Guessing!"""
+    """Guess Lower!"""
     global number
     global random
     while number != random:
@@ -65,7 +65,7 @@ def guess() -> None:
         
 
 def guess2() -> None:
-    """Guess Again!"""
+    """Guess Higher!"""
     global number
     global random
     while number != random:
@@ -77,6 +77,7 @@ def guess2() -> None:
   
 
 def congrats(x: int) -> int:
+    """Congrats, you won!"""
     print(player + ", You guessed correctly! You earned 1 adventure point. Goodbye! ")
     return points
 
