@@ -23,7 +23,7 @@ def main() -> None:
     number = int(input("Please choose a number: 1, 2, 3, or enter 0 to exit the game. "))
     
     if number == 0:
-        print("Game exited. You earned 0 adventure points. Goodbye ")
+        print(f"Game exited. You earned {points} adventure points. Goodbye ")
 
     while number > 0:
         if number == random:
@@ -77,7 +77,7 @@ def guess2() -> None:
 
 def congrats(x: int) -> int:
     """Congrats, you won!"""
-    print(player + ", You guessed correctly! You earned 1 adventure point. Goodbye! ")
+    print(f"You guessed correctly, {player}! You earned {points} adventure point. Goodbye! ")
     return points
 
 
