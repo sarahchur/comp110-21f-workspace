@@ -1,3 +1,4 @@
+"""Project 00: Guess a number 1-3!!!"""
 __author__ = "730228276"
 
 from random import randint
