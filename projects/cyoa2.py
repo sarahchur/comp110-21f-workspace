@@ -64,7 +64,7 @@ def guess() -> None:
 def congrats(x: int) -> int:
     """Congrats, you won!"""
     global NAMED_CONSTANT
-    print(f"You guessed correctly, {player}! Adventure points earned: {points}! Goodbye! {NAMED_CONSTANT}")
+    print(f"You guessed correctly, {player}! You earned {points} adventure point. Goodbye! {NAMED_CONSTANT}")
     return points
 
 
