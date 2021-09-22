@@ -7,7 +7,7 @@ points: int = 0
 number: int = 0
 player: str = "name"
 random: int = 0
-NAMED_CONSTANT: str = '\U00000000'
+NAMED_CONSTANT: str = '\U0001F604'
 
 
 def main() -> None:
@@ -77,7 +77,8 @@ def guess2() -> None:
 
 def congrats(x: int) -> int:
     """Congrats, you won!"""
-    print(f"You guessed correctly, {player}! You earned {points} adventure point. Goodbye! ")
+    global NAMED_CONSTANT
+    print(f"You guessed correctly, {player}! You earned {points} adventure point. Goodbye! {NAMED_CONSTANT}")
     return points
 
 
