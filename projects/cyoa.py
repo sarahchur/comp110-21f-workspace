@@ -15,7 +15,7 @@ def main() -> None:
     greet()
     global points
     points = 0
-    print("Hello, " + player)
+    print(f" Hello, {player}")
     global random
     random = randint(1, 3)
     print(random)
@@ -56,7 +56,7 @@ def guess() -> None:
     global number
     global random
     while number != random:
-        print(player + ", Guess lower! ")
+        print(f"Guess lower, {player}! ")
         number = int(input("New guess: "))
     global points
     points = points + 1
@@ -68,7 +68,7 @@ def guess2() -> None:
     global number
     global random
     while number != random:
-        print(player + ", Guess higher!")
+        print(f"Guess higher, {player}!")
         number = int(input("New guess: "))
     global points
     points = points + 1
