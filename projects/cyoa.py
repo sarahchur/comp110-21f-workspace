@@ -8,11 +8,11 @@ points: int = 0
 number: int = 0
 player: str = "name"
 random: int = 0
-NAMED_CONSTANT: "\U00000000"
+NAMED_CONSTANT: str = '\U00000000'
 
 
 def main() -> None:
-    """Main function."""
+    """This is the main function.""" 
     greet()
     global points
     points = 0
@@ -40,7 +40,7 @@ def main() -> None:
 
         
 def greet() -> None:
-    """Welcoming my player!"""
+    """"Welcoming my player!""""
     print("Let's play a game! I am thinking of a number 1-3. You have to guess which number it is!")
     global player
     player = input("What is your name? ")
