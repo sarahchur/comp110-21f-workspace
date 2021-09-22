@@ -1,3 +1,6 @@
+"""Project One: Guess a Number 1-3"""
+
+__author__ = "730228276"
 
 from random import randint
 
@@ -5,6 +8,7 @@ points: int = 0
 number: int = 0
 player: str = "name"
 random: int = 0
+NAMED_CONSTANT: "\U00000000"
 
 
 def main() -> None:
@@ -25,6 +29,7 @@ def main() -> None:
     while number > 0:
         if number == random:
             correct()
+            congrats(points)
         else:
             if number > random:
                 guess()
@@ -45,7 +50,6 @@ def correct() -> None:
     """"You guessed correctly!"""
     global points
     points = points + 1
-    congrats(points)
 
 
 def guess() -> None:
@@ -73,7 +77,7 @@ def guess2() -> None:
   
 
 def congrats(x: int) -> int:
-    print(player + " You guessed correctly! You earned 1 adventure point. Goodbye! ")
+    print(player + ", You guessed correctly! You earned 1 adventure point. Goodbye! ")
     return points
 
 
