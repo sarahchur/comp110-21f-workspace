@@ -15,7 +15,7 @@ def main() -> None:
     greet()
     global points
     points = 0
-    print(f" Hello, {player}")
+    print(f"Hello, {player}")
     goagain: bool = True
     while goagain:
         global random
