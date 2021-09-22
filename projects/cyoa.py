@@ -45,7 +45,7 @@ def greet() -> None:
 
 
 def correct() -> None:
-    """"You guessed correctly!"""
+    """You guessed correctly!"""
     global points
     points = points + 1
 
