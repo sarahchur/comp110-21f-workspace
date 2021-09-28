@@ -21,11 +21,10 @@ def is_equal(x: list[int], y: list[int]) -> bool:
     if len(x) == 0 and len(y) == 0:
         return False
     while len(x) == len(y):
-        if x[i] == y[i]:
-            return True
+        if x[i] != y[i]:
+            return False
         i += 1
-        return False
-    return False
+    return True
 
 
 def max(x: list[int]) -> int:
