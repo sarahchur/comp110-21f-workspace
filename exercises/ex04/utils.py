@@ -21,6 +21,11 @@ def is_equal(x: list[int], y: list[int]) -> bool:
             i += 1
         return True
     return False
+
+
+def max(input: list[int]) -> int:
+    if len(input) == 0:
+        raise ValueError("max() arg is an empty List")
     
     
 
