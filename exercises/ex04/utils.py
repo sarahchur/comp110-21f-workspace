@@ -6,6 +6,8 @@ __author__ = "730228276"
 def all(x: list[int], y: int) -> bool:
     """Return boolean values when comparing an integer to my list."""
     i: int = 0
+    if len(x) == 0:
+        return False
     while i < len(x):
         if y != x[i]:
             return False
