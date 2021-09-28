@@ -18,8 +18,9 @@ def is_equal(x: list[int], y: list[int]) -> bool:
     i: int = 0
     while len(x) == len(y):
         if x[i] == y[i]:
-            i += 1
-        return True
+            return True
+        i += 1
+        return False
     return False
 
 
