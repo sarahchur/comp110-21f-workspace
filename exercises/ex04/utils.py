@@ -11,3 +11,4 @@ def all(x: list[int], y: int) -> bool:
             return True
         i = i + 1
     return False
+
