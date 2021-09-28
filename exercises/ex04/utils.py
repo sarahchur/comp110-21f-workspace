@@ -12,3 +12,32 @@ def all(x: list[int], y: int) -> bool:
         i = i + 1
     return False
 
+
+def is_equal(x: list[int], y: list[int]) -> bool:
+    """Return True if every element at every index is equal in both lists."""
+    i: int = 0
+    while len(x) == len(y):
+        if x[i] == y[i]:
+            i += 1
+        return True
+    return False
+    
+    
+
+
+    
+    
+    
+    
+
+        
+
+
+        
+   
+            
+    
+
+    
+
+      
