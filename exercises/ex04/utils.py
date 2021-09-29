@@ -19,12 +19,13 @@ def is_equal(x: list[int], y: list[int]) -> bool:
     """Return True if every element at every index is equal in both lists."""
     i: int = 0
     if len(x) == 0 and len(y) == 0:
-        return False
+        return True
     while len(x) == len(y):
-        if x[i] != y[i]:
-            return False
+        if x[i] == y[i]:
+            return True
         i += 1
-    return True
+        return False
+    return False
 
 
 def max(x: list[int]) -> int:
