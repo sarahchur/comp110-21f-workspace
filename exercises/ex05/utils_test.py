@@ -27,7 +27,26 @@ def test_only_evens3() -> None:
     assert only_evens(x) == [2, 4, 6, 8, 10]
 
 
-def test_sub() -> None:
+def test_sub1() -> None:
     """Test sub to include only numbers specified by indicies."""
     a_list: list[int] = [10, 20, 30, 40]
     assert sub(a_list, 1, 3) == [20, 30]
+
+
+def test_sub2() -> None:
+    """Test sub for a long list of numbers."""
+    a_list: list[int] = [30, 40, 20, 10, 5, 8, 10, 20, 50, 20, 60]
+    assert sub(a_list, 2, 8) == [20, 10, 5, 8, 10, 20] 
+
+
+def test_sub3() -> None:
+    """Test sub for an index of 0."""
+    a_list: list[int] = [1, 2, 3, 5, 6, 6, 7]
+    assert sub(a_list, 0, 5) == [1, 2, 3, 5, 6]
+
+
+def concat1() -> None:
+    """Test concat for the same length and numbers."""
+    x: list[int] = [1, 2, 3]
+    y: list[int] = [1, 2, 3]
+    assert concat(x, y) == [1, 2, 3, 1, 2, 3]
