@@ -6,7 +6,7 @@
 __author__ = "730228276"
 
 
-from exercises.ex05.utils import only_evens, sub
+from exercises.ex05.utils import only_evens, sub, concat
 
 
 def test_only_evens1() -> None:
@@ -45,8 +45,22 @@ def test_sub3() -> None:
     assert sub(a_list, 0, 5) == [1, 2, 3, 5, 6]
 
 
-def concat1() -> None:
+def test_concat1() -> None:
     """Test concat for the same length and numbers."""
     x: list[int] = [1, 2, 3]
     y: list[int] = [1, 2, 3]
     assert concat(x, y) == [1, 2, 3, 1, 2, 3]
+
+
+def test_concat2() -> None:
+    """Test concat for one empty list."""
+    x: list[int] = []
+    y: list[int] = [1, 2, 3]
+    assert concat(x, y) == [1, 2, 3]
+
+
+def test_concat3() -> None:
+    """Test concat for other empty list."""
+    x: list[int] = [1, 2, 3, 4, 5, 6]
+    y: list[int] = []
+    assert concat(x, y) == [1, 2, 3, 4, 5, 6]
