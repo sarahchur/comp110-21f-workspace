@@ -44,19 +44,3 @@ def concat(x: list[int], y: list[int]) -> list[int]:
         copyy.append(y[i])
         i += 1
     return copyx + copyy
-
-    
-
-
-
-
-    
-
-
-
-    
-
-
-
-
-
