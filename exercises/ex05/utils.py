@@ -18,13 +18,15 @@ def only_evens(x: list[int]) -> list[int]:
 
 def sub(a_list: list[int], x: int, y: int) -> list[int]:
     """Return a subset of a_list between the 2 values."""
-    i: int = 0
     subset: list[int] = list()
+    i: int = 0
     while i < len(a_list):
-        if x == a_list[i]:
-            subset.append(x[i])
-        i += 1
-        
+        if x < y:
+            subset.append(a_list[x])
+        x += 1
+    return subset
+
+
 
     
 
