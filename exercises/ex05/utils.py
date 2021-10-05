@@ -21,9 +21,9 @@ def sub(a_list: list[int], x: int, y: int) -> list[int]:
     subset: list[int] = list()
     i: int = 0
     while i < len(a_list):
-        if x < y:
-            subset.append(a_list[x])
-        x += 1
+        if i >= x and i < y:
+            subset.append(a_list[i])
+        i += 1
     return subset
 
 
