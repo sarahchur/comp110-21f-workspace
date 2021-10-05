@@ -15,6 +15,4 @@ def test_only_evens() -> None:
 def test_sub() -> None:
     """Test sub to include only numbers specified by indicies"""
     a_list: list[int] = [10, 20, 30, 40]
-    x: int = 1
-    y: int = 3
     assert sum(a_list) == [20, 30]
