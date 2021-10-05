@@ -24,6 +24,7 @@ def sub(a_list: list[int], x: int, y: int) -> list[int]:
         if x == a_list[i]:
             subset.append(x[i])
         i += 1
+        
 
     
 
