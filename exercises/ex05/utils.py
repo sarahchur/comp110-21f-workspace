@@ -27,6 +27,24 @@ def sub(a_list: list[int], x: int, y: int) -> list[int]:
     return subset
 
 
+def concat(x: list[int], y: list[int]) -> list[int]:
+    """Return one list combining both lists of x and y."""
+    copyx: list[int] = list()
+    copyy: list[int] = list()
+    i: int = 0
+    while i < len(x):
+        copyx.append(x[i])
+        i += 1
+    i = 0
+    while i < len(x):
+        copyy.append(y[i])
+        i += 1
+    return copyx + copyy
+
+    
+
+
+
 
     
 
