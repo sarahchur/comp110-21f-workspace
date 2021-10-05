@@ -32,6 +32,10 @@ def concat(x: list[int], y: list[int]) -> list[int]:
     copyx: list[int] = list()
     copyy: list[int] = list()
     i: int = 0
+    if len(x) == 0 and len(x) < len(y):
+        return y
+    if len(y) == 0 and len (y) < len(x):
+        return x
     while i < len(x):
         copyx.append(x[i])
         i += 1
