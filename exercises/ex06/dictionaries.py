@@ -18,10 +18,26 @@ def invert(x: dict[str, str]) -> dict[str, str]:
 
 def favorite_color(x: dict[str, str]) -> str:
     """Return a str of color that appeared most."""
+    colors_numbers: dict[str, int] = {}
+    for key in x: 
+        color = x[key]
+        if color not in colors_numbers:
+            colors_numbers[color] = 1
+        else:
+            colors_numbers[color] += 1 
+    for key in colors_numbers:
+        number = colors_numbers[key]
+        if number in colors_numbers > colors_numbers:
+            return key
+
+        
 
 
-def count(x: list[str]) -> dict[str,int]:
-    """Count # of times value appeared."""
-    result = {}
-    for key in result:
+
+
+
+# def count(x: list[str]) -> dict[str,int]:
+#     """Count # of times value appeared."""
+#     result = {}
+#     for key in result:
         
